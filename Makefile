@@ -1,4 +1,6 @@
-all: compile xref eunit dialyze edoc
+all: compile
+
+profile ?= native
 
 rebar ?= ./rebar3
 rebar_cmd = $(rebar) $(profile:%=as %)
